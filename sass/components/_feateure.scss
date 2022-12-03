@@ -1,0 +1,55 @@
+.feateure {
+    padding-bottom: 0;
+}
+
+/* .title-hide {
+  pointer-events: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
+.feateure__list {
+    display: flex;
+}
+
+.feateure__icon {
+    padding: 25px 100px;
+    background: var(--background-white);
+    border-radius: 4px;
+    margin: 0 30px 30px 0;
+}
+
+.feateure__icon:last-child {
+    margin-right: 0;
+}
+
+// .section-title {
+//   text-align: center;
+//   margin-bottom: 50px;
+//   font-size: 36px;
+//   line-height: 1.17;
+//   letter-spacing: 0.03em;
+// } 
+
+.feateure__title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.feateure__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--title-text-color);
+}
