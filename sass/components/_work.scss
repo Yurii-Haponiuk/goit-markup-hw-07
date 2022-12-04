@@ -1,20 +1,15 @@
 .work {
     padding-bottom: 94px;
-}
-
-.work__list {
+    &__list {
     display: flex;
-}
-
-.work__item {
+    }
+    &__item {
     position: relative;
-}
-
-.work__item:not(:last-child) {
+    }
+    &__item:not(:last-child) {
     margin-right: 30px;
-}
-
-.work__info {
+    }
+    &__info {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -23,9 +18,17 @@
     line-height: 1.14;
     text-transform: uppercase;
     text-align: center;
-    color: var(--text-color-white);
+    color: $text-color-white;
     width: 370px;
     height: 70px;
 
     background: rgba(47, 48, 58, 0.8);
+    }
 }
+
+
+
+
+
+
+

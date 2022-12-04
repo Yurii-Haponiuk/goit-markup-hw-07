@@ -1,15 +1,15 @@
 /* Портфоліо */
 
 /* Фільтр */
-.portfolio__nav {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-    gap: 8px;
-}
-
-.portfolio__button {
-    background: var(--background-white);
+.portfolio{
+    &__nav {
+       display: flex;
+       justify-content: center;
+       margin-bottom: 50px;
+       gap: 8px;
+    }
+    &__button {
+    background:$background-white;
     border-radius: 4px;
     border: none;
     font-size: 16px;
@@ -20,75 +20,59 @@
     padding: 6px 22px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__button:hover,
+    &__button:focus {
+    background-color:$accent-color;
+    color:$text-color-white;
+ }
 }
-
-.portfolio__button:hover,
-.portfolio__button:focus {
-    background-color: var(--accent-color);
-    color: var(--text-color-white);
-}
-
-/* .portfolio-element {
-  width: 370px;
-  border: var(--title-text-color);
-  box-sizing: border-box;
-  border: 1px solid #eeeeee;
-} */
-
 /* CARD SET */
-.card__set {
-    /* min-width: 370px; */
-    display: flex;
-    flex-wrap: wrap;
-    /* margin-left: calc(-1 * var(--card__set-gap));
-  margin-top: calc(-1 * var(--card__set-gap)); */
-}
-
-.card__item {
-    background: var(--background-white-two);
-    border: 1px solid var(--border-color-card);
-    flex-basis: calc(100% / 3 - var(--card__set-gap));
-    margin-left: var(--card__set-gap);
-    margin-top: var(--card__set-gap);
-}
-
-/* CARD */
-.card__article {
-    border-radius: 4px;
-    overflow: hidden;
-    height: 100%;
-}
-
-.card__article:hover {
-    box-shadow: var(--card-shadow);
-}
-
-.card__content {
+.card{
+    &__set {
+        /* min-width: 370px; */
+        display: flex;
+        flex-wrap: wrap;
+        /* margin-left: calc(-1 * var($card__set-gap));
+  margin-top: calc(-1 * var($card__set-gap)); */
+    }
+    &__item {
+    background: $background-white-two;
+    border: 1px solid $border-color-card;
+    flex-basis: calc(100% / 3 - $card__set-gap);
+    margin-left:$card__set-gap;
+    margin-top: $card__set-gap;
+    }
+    &__article {
+     border-radius: 4px;
+     overflow: hidden;
+     height: 100%;
+    }
+    &__article:hover {
+    box-shadow:$card-shadow;
+    }
+    &__content {
     padding: 20px 24px;
-}
-
-.card__heading {
+    }
+    &__heading {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 
-    color: var(--primary-text-color);
-}
-
-.card__text {
+    color:$primary-text-color;
+    }
+    &__text {
     margin-top: 4px;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    color: var(--title-text-color);
-}
-
-.card__thumb {
+    color:$title-text-color;
+    }
+    &__thumb {
     position: relative;
     overflow: hidden;
-}
-
-.card__info {
+    }
+    &__info {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -97,15 +81,15 @@
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
-    color: var(--text-color-white);
+    color:$text-color-white;
     /* width: 100%;
   height: 100%; */
 
     background: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.card__item:hover .card__info {
+    }
+    &__item:hover &__info {
     transform: translateY(0);
+    }
 }

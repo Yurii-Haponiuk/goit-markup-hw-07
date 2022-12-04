@@ -1,21 +1,18 @@
 /* logo */
 .logo {
     display: inline-block;
-    /* margin: 24px 0 25px; */
-}
-
-.logo {
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    &__web {
+    color:$accent-color;
+    }
+    &__studio {
+    color:$black;
+    }
 }
 
-.logo__web {
-    color: var(--accent-color);
-}
 
-.logo__studio {
-    color: var(--black);
-}
+
